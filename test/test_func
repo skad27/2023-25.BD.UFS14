@@ -1,10 +1,10 @@
-test function
+
 import pytest
 import requests
 from mymodule import get_pubchem_cid
 
 def search_terms_in_pdf():
     session = requests.Session()
-    ingredient_name = "Aspirin"
+    ingredient_name = "Triacetin"
     cid = search_terms_in_pdf(session, ingredient_name)
-    assert cid == "2244", "Il CID per l'Aspirina dovrebbe essere '2244'"
+    assert cid == "5541", "Il CID per il Triacetin dovrebbe essere '5541'"
