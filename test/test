@@ -1,0 +1,11 @@
+import requests
+import pytest
+import json
+from mymodule import g
+
+def search_terms_in_pdf(snapshot):
+    session = requests.Session()
+    cid = "2244"  # CID per l'Aspirina
+    ld50_values = search_terms_in_pdf(session, cid)
+    serialized_data = json.dumps(ld50_values, indent=4)
+    snapshot.assert_match(serialized_data, 'search_terms_in_pdf_snapshot')
