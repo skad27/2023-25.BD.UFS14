@@ -17,4 +17,4 @@ def test_pubchem_ld50(snapshot):
     serialized_ld50 = json.dumps(ld50_data, indent=4)
 
     # Confronto con lo snapshot fornito
-    snapshot.assert_match(serialized_ld50, 'pubchem_ld50_data')
+    snapshot.assert_match(serialized_ld50, 'pubchem_ld50_snapshot')
