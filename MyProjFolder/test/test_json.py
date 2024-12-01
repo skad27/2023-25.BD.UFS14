@@ -27,7 +27,7 @@ schema_pubchem = {
 
 def test_pubchem_schema():
     sess = requests.Session()
-    compound = "Aspirina"
+    compound = "Aspirin"
     api_url = f"https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/{compound}/cids/JSON"
     resp = sess.get(api_url)
     json_data = resp.json()

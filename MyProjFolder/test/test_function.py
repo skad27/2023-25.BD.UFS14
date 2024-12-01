@@ -4,6 +4,6 @@ from mymodule import get_cid
 
 def test_cid_retrieval():
     sess = requests.Session()
-    compound = "Aspirina"
+    compound = "Aspirin"
     result_cid = get_cid(sess, compound)
     assert result_cid == "2244", "Il CID per l'Aspirina dovrebbe essere '2244'"
