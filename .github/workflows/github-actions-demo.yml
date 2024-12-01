@@ -13,5 +13,5 @@ jobs:
     - run: uname -a
     - run: pip install --upgrade pip
     - run: pip install -U pytest
-    - run: pip install -r MyProjFolder/tests/requirements.txt
+    - run: pip install -r MyProjFolder/test/requirements.txt
     - run: pytest
