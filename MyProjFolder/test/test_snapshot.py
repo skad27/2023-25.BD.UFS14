@@ -8,7 +8,7 @@ def test_pubchem_ld50(snapshot):
     session = requests.Session()
 
     # Utilizzo di un altro CID, ad esempio "1983" (caffeina)
-    cid = "1983"
+    cid = "2244"
 
     # Recupero dei valori LD50
     ld50_data = get_ld50(session, cid)
